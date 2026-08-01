@@ -75,11 +75,35 @@ src
 
 ---
 
-## Run the Project
+## Running the Project
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/AbanoubSedki91/Task2.git
+```
+
+### 2. Navigate to the project
+
+```bash
+cd Task2
+```
+
+### 3. Install dependencies
+
+```bash
+mvn clean install
+```
+
+### 4. Run all tests
 
 ```bash
 mvn clean test
 ```
+
+### Alternative
+
+You can also execute the **WikipediaTest** class directly from IntelliJ IDEA by right-clicking the test class and selecting **Run 'WikipediaTest'**.
 
 ---
 
