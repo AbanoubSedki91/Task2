@@ -16,6 +16,8 @@ public class ArticlePage extends BasePage
     private final By addToListButton =
             By.id("org.wikipedia:id/snackbar_action");
 
+    private final By articleTitle =
+            By.xpath("//android.widget.TextView[@text='Artificial intelligence']");
 
     public void waitForArticleToLoad()
     {
@@ -42,4 +44,8 @@ public class ArticlePage extends BasePage
         click(addToListButton);
     }
 
+    public boolean isArticleDisplayed()
+    {
+        return isDisplayed(articleTitle);
+    }
 }

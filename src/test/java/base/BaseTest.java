@@ -18,9 +18,8 @@ public class BaseTest
     @AfterClass
     public void tearDown()
     {
-        //End of session and not closing APP
+         //End of session and not closing APP
         //DriverFactory.quitDriver();
-
        //Closing APP and not End of session
         DriverFactory.getDriver().terminateApp("org.wikipedia");
     }
